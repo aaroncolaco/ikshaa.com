@@ -128,3 +128,8 @@
 .contact .container h4 {
     color: red;
 }
+
+.contact .form {
+    margin: 0 auto;
+    width:80%
+}

@@ -1,23 +1,23 @@
 <?php
        // from the form
-       $name = trim(strip_tags($_POST['name']));
-       $email = trim(strip_tags($_POST['email']));
-       $message = htmlentities($_POST['message']);
+       $name = $_POST['Name'];
+       $email = $_POST['Email'];
+       $message = $_POST['MessageToSend'];
 
        // set here
        $subject = "Reservation";
        $to = 'taipan93@gmail.com';
 
-       $body = <<<HTML
-$message
-HTML;
+//        $body = <<<HTML
+// $message
+// HTML;
 
        $headers = "From: $email\r\n";
        $headers .= "Content-type: text/html\r\n";
 
        // send the email
-       mail($to, $subject, $body, $headers);
-
-       // redirect afterwords, if needed
-       //header('Location: thanks.html');
+       mail($to, $subject, $message, $headers);
+       
+		#redirect
+		header( "Location: http://aarongoa.net84.net/#contact" );
 ?>
