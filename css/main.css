@@ -133,3 +133,13 @@
     margin: 0 auto;
     width:80%
 }
+
+.footer { 
+    margin-top: 10;
+    padding-top: 10px;
+}
+
+.footer p { 
+    color: white;
+    text-align: center;
+}

@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 	
 	<head>
 		<!--This makes sure the page renders properly on a mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
-		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<title>Ikshaa Luxury Villa</title>
+		<meta name="description" content="Luxurious, secluded Goan villa in the picturesque village of Loutolim">
+		<meta name="keywords" content="ikshaa, goa, ikshaa luxury villa, villa goa, holiday goa, aaron de miranda colaco, aarongoa">
+		<meta name="copyright" content="Copyright Ikshaa - 2010">
+		<meta name="author" content="Ikshaa">
+		<meta name="email" content="nyaragoa@gmail.com">
+		<meta name="Distribution" content="Global">
+		<meta name="Rating" content="General">
+		<meta name="Robots" content="INDEX,FOLLOW">
+		<meta name="Revisit-after" content="31 Days">
 
-		<link rel="stylesheet" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/main.css">
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" type="text/css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 	</head>
 
@@ -238,12 +249,12 @@
 			<div class="container">
 				<h4 id="changingText">Enquiry Form</h4>
 				
-				<form class="form" action="/" method="" role="form" autocomplete="on">
+				<form class="form" id="form" action="" method="" role="form" autocomplete="on">
 				  <div class="form-group">
-				    <input type="text" class="form-control" required="required" name="name" id="name" placeholder="First & Last name">
+				    <input type="text" class="form-control" required name="name" id="name" placeholder="First & Last name">
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" required="required" name="email" id="email" placeholder="Email">
+				    <input type="email" class="form-control" required name="email" id="email" placeholder="Email">
 				  </div>
 				  <div class="form-group">
 				    <input type="tel" class="form-control" name="number1" id="number1" placeholder="Landline number">
@@ -262,21 +273,25 @@
 				  </div>
 				  <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
 				</form>
+
+				<div class="footer">
+					<p class="">Copyright &copy Ikshaa. All Rights Reserved. This website was created by <a href="https://www.facebook.com/aaron.demirandacolaco">Aaron</a></p>
+				</div>
+
 			</div>
 		</div>
-
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(window).load(function() {
 				$(".loader").fadeOut("slow");
 			})
 		</script>
-		<script src="/js/bootstrap.min.js"></script>
-		<script src="../../assets/js/docs.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/docs.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-		<script src="js/script.js"></script>
+		<script type="text/javascript" src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 
 	</body>
 
