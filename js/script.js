@@ -17,12 +17,19 @@ $(document).ready(function() {
 		//	//code here
 		// }
 
-		// if ($('#name').val.equal('')) {			//even this causes the same problem!!
-		// 	return;
-		// };
-		// if ($('#email').val.equal('')) {
-		// 	return;
-		// };
+		var $flag = true;
+		//hide error message if it is showing
+		$('#nameCheck').hide();
+		$('#emailCheck').hide();
+
+		if ($('#name').val() === '') {          //even this causes the same problem!!
+			$flag = false;
+			$('#nameCheck').show();		//show the error message
+		};
+		if ($('#email').val() === '') {
+			$flag = false;
+			$('#emailCheck').show();
+		};
 
 		// if( document.form.name.value == "" )
 		// {
@@ -31,6 +38,25 @@ $(document).ready(function() {
 		// 	return;
 		// }
 
+		if ($flag) {
+			$('#nameCheck').hide();
+			$('#emailCheck').hide();
+			sendData();
+		};
+
+		return false;
+
+	});
+
+	$(".nav a").on("click", function(){
+		// so that the clicked one gets highlighted
+	   $(".nav").find(".active").removeClass("active");
+	   $(this).parent().addClass("active");
+	   //to hide the menu after clicking
+	   $('.navbar-collapse').collapse('hide');
+	});
+	
+	var sendData = function() { 
 		var name = $('#name').val();
 		var email = $('#email').val();
 		var number1 = $('#number1').val();
@@ -58,15 +84,6 @@ $(document).ready(function() {
 		});
 		
 		return;
+	}
 
-	});
-
-	$(".nav a").on("click", function(){
-		// so that the clicked one gets highlighted
-	   $(".nav").find(".active").removeClass("active");
-	   $(this).parent().addClass("active");
-	   //to hide the menu after clicking
-	   $('.navbar-collapse').collapse('hide');
-	});
-	
 });
