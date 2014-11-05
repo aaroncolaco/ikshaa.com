@@ -8,27 +8,10 @@
     background: url('/Images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
-.nav {
-    top: 0;
-    position: fixed;
+.navbar {
     width: 100%;
-    background-color: gainsboro; /* 'gainsboro' is a darker shade of #efefef */
+    background-color: #efefef;
     opacity: 0.75;
-    display: inline;
-    z-index: 1;   /* To make it lie on top of all other elements. Like Material-Design. 
-                    If not put, the images overlap it on scrolling in cell phones*/
-}
-
-.nav a {
-    color: #5a5a5a;     /*can change to 'black' to see more clearly*/
-    font-size: 12px;
-    font-weight: bold;
-    padding: 14px 10px;
-    text-transform: uppercase;
-}
-
-.nav li {
-    display: inline;
 }
 
 .jumbotron {

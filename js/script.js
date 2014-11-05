@@ -1,4 +1,4 @@
-var main = function() {
+$(document).ready(function() {
 	
 	$('#submitButton').click(function() { 
 
@@ -57,9 +57,16 @@ var main = function() {
 		    }
 		});
 		
-		return false;
+		return;
 
 	});
-}
 
-$(document).ready(main);
+	$(".nav a").on("click", function(){
+		// so that the clicked one gets highlighted
+	   $(".nav").find(".active").removeClass("active");
+	   $(this).parent().addClass("active");
+	   //to hide the menu after clicking
+	   $('.navbar-collapse').collapse('hide');
+	});
+	
+});
