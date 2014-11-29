@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$('body').scrollspy({ target: '.navbar' });
+
 	$('#form').on('submit', function(ev) {
 
 	    // prevent from auto-submitting  
