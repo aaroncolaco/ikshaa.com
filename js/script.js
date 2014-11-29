@@ -4,12 +4,12 @@ $(document).ready(function() {
 
 	$('#form').on('submit', function(ev) {
 
-	    // prevent from auto-submitting  
-	    ev.preventDefault();
-	    ev.stopPropagation();
+		// prevent from auto-submitting  
+		ev.preventDefault();
+		ev.stopPropagation();
 
-	    // if all is good, then submit.
-	    sendData();
+		// if all is good, then submit.
+		sendData();
 
 	});
 

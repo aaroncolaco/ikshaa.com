@@ -1,5 +1,5 @@
 /*body { 
-    padding-top: 40px; 
+	padding-top: 40px; 
 }*/
 .loader {
 	width: 100%;
@@ -46,9 +46,6 @@
 		box-shadow: 1.375em 0.0em #debf23, 1.375em 0.0em 0.625em -0.3125em rgba(0, 0, 0, 0.52), 2.75em 0.29721em #b8b64c, 2.75em -0.29721em 0.625em -0.3125em rgba(0, 0, 0, 0.52), 4.125em 0.18368em #92ae75, 4.125em -0.18368em 0.625em -0.3125em rgba(0, 0, 0, 0.52), 5.5em -0.18368em #6ca59d, 5.5em 0.18368em 0.625em -0.3125em rgba(0, 0, 0, 0.52), 6.875em -0.29721em #469cc6, 6.875em 0.29721em 0.625em -0.3125em rgba(0, 0, 0, 0.52);
 	}
 }
-
-
-
 
 .navbar {
 	width: 100%;
