@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$('body').scrollspy({ target: '.navbar' });
+	$('body').scrollspy({ target: '.navbar' }); /*To highlight current position on the navbar while scrolling*/
 
 	$('#form').on('submit', function(ev) {
 

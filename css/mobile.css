@@ -1,6 +1,7 @@
-/*body { 
-	padding-top: 40px; 
-}*/
+body { 
+	padding-top: 40px;
+	overflow: hidden;
+}
 .loader {
 	position: fixed;
 	left: 0px;
@@ -13,6 +14,7 @@
 
 .navbar {
 	width: 100%;
+	z-index: 1;
 }
 
 .jumbotron {
