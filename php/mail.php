@@ -16,5 +16,5 @@
 		mail($to, $subject, $message, $headers);
 	
 		#redirect
-		header( "Location: http://aarongoa.net84.net/#contact" );
+		header( "Location: http://aarongoa.tk/#contact" );	//this line is important. remember to change domain if you use the script on a new domain. otherwise it won't return and carry out remaining operations after sending the email
 ?>
