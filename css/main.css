@@ -1,6 +1,15 @@
+@font-face {
+	font-family:"Samarkan";		/*Hindi type font*/
+	src:url("/fonts/samarkan.woff") format("woff");
+}
+
 body { 
 	padding-top: 40px;
 	overflow: hidden;	/*To prevent scrolling initially while page loads. After page loads it is changed to 'auto' using jQuery in the index.html file*/ 
+}
+
+a, p, h1, h2, h4, .location{ 
+	font-family: Verdana;
 }
 
 .loader {
@@ -55,7 +64,7 @@ body {
 }
 
 .jumbotron {
-	background-image:url('/Images/Courtyard.jpg');
+	background-image:url('/Images/Driveway1.jpg');
 	height: 625px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -68,14 +77,14 @@ body {
 }
 
 .jumbotron h1 {
-	color: #fff;
-	font-size: 48px;  
-	font-weight: bold;
+	font-family: 'Samarkan';
+	color: #ffd700;
+	font-size: 70px; 
 }
 
 .jumbotron p {
 	font-size: 20px;
-	color: #fff;
+	color: #ffd700;
 }
 
 .info-images {
@@ -164,10 +173,8 @@ body {
 .footer p { 
 	color: #fff;
 	text-align: center;
-	font-weight: bold;
 }
 
-.footer a {
-	color: DarkBlue;
-	font-weight: bold;
+.footer a, u {
+	color: #ffff00;
 }

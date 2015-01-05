@@ -41,12 +41,17 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "post",
-			url: "php/mail.php",
+			url: "http://www.aarongoa.tk/php/mail.php",
 			data: dataString,
 			success: function() {
 				$('.form').hide()
-				$('#changingText').text("Thank you. We will be in touch with you shortly " + name)
-			}
+				$('#changingText').text("Thank you " + name +  "! We will be in touch with you shortly")
+			},
+			error: function(xhr, textStatus, error){
+				  console.log(xhr.statusText);
+				  console.log(textStatus);
+				  console.log(error);
+			  }
 		});
 		
 		return;
