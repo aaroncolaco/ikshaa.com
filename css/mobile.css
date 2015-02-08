@@ -3,7 +3,12 @@
 	src:url("/fonts/samarkan.woff") format("woff");
 }
 
+html {
+	height: 100%;	/*So that the 100% divs are full height*/
+}
+
 body { 
+	height: 100%;	/*So that the 100% divs are full height*/
 	padding-top: 40px;
 	overflow: hidden;
 }
@@ -25,11 +30,13 @@ a, p, h1, h2, h4, .location {
 .navbar {
 	width: 100%;
 	z-index: 1;
+
+	background-color: #ffffff;
 }
 
 .jumbotron {
 	background-image:url('/Images/Driveway.jpg');
-	height: 625px;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;   /*Keeps the image stationary so that the other stuff scrolls over it*/
@@ -43,11 +50,11 @@ a, p, h1, h2, h4, .location {
 .jumbotron h1 {
 	font-family: 'Samarkan';
 	color: #ffd700;
-	font-size: 70px;  
+	font-size: 6em;  
 }
 
 .jumbotron p {
-	font-size: 20px;
+	font-size: 1.5em;
 	color: #ffd700;
 }
 
@@ -57,7 +64,7 @@ a, p, h1, h2, h4, .location {
 
 .about { 
 	background-image: url("/Images/SharedBathroom.jpg");
-	height: 625px;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -70,14 +77,14 @@ a, p, h1, h2, h4, .location {
 
 .about h1 {
 	color: #fff;
-	font-size: 20px; 
+	font-size: 2em; 
 }
 
 /*Can hide the second para on mobiles by adding an ID to it and setting its text size to 0px in this file if this is too small to read.
 Then can increase this size to 20px.*/
 .about p {
 	color: #f7f7f7;
-	font-size: 15px;
+	font-size: 1.1em;
 }
 
 .facilities {

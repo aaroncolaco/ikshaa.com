@@ -3,7 +3,12 @@
 	src:url("/fonts/samarkan.woff") format("woff");
 }
 
+html {
+	height: 100%;	/*So that the 100% divs are full height*/
+}
+
 body { 
+	height: 100%;	/*So that the 100% divs are full height*/
 	padding-top: 40px;
 	overflow: hidden;	/*To prevent scrolling initially while page loads. After page loads it is changed to 'auto' using jQuery in the index.html file*/ 
 }
@@ -61,17 +66,24 @@ a, p, h1, h2, h4, .location{
 .navbar {
 	width: 100%;
 	z-index: 1;
+
+	background-color: #ffffff;
+}
+
+.navbar > .navbar-collapse {
+	text-align: center;
 }
 
 .jumbotron {
 	background-image:url('/Images/Driveway1.jpg');
-	height: 625px;
+	height: 100%;	/*So that jumbotron is full height even on large screens*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;   /*Keeps the image stationary so that the other stuff scrolls over it*/
 }
 
 .jumbotron .container {
+	height: 100%;
 	position: relative;
 	top:100px;
 }
@@ -79,11 +91,11 @@ a, p, h1, h2, h4, .location{
 .jumbotron h1 {
 	font-family: 'Samarkan';
 	color: #ffd700;
-	font-size: 70px; 
+	font-size: 6.5em; 
 }
 
 .jumbotron p {
-	font-size: 20px;
+	font-size: 1.5em;
 	color: #ffd700;
 }
 
@@ -93,7 +105,7 @@ a, p, h1, h2, h4, .location{
 
 .about { 
 	background-image: url("/Images/SharedBathroom.jpg");
-	height: 625px;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -106,17 +118,17 @@ a, p, h1, h2, h4, .location{
 
 .about h1 {
 	color: #fff;
-	font-size: 30px;
+	font-size: 2.5em;
 }
 
 .about p {
 	color: #f7f7f7;
-	font-size: 20px;
+	font-size: 1.5em;
 }
 
 .facilities {
 	background-image: url("/Images/CourtyardNight.jpg");
-	height: 625px;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -129,12 +141,12 @@ a, p, h1, h2, h4, .location{
 
 .facilities .container h3 {
 	color: #fff;
-	font-size: 30px;  
+	font-size: 2.5em;  
 }
 
 .facilities .container li {
 	color: #f7f7f7;
-	font-size: 20px;  
+	font-size: 1.5em;  
 }
 
 .gallery .carousel-inner .item img { 
@@ -146,7 +158,7 @@ a, p, h1, h2, h4, .location{
 	background-image: url("/Images/IkshaaDoor.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	height: 625px;
+	height: 100%;
 	background-size: cover;
 }
 
