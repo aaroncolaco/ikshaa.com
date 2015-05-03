@@ -18,13 +18,25 @@ a, p, h1, h2, h4, .location {
 }
 
 .loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
 	width: 100%;
 	height: 100%;
+	background-color: gainsboro;
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
 	z-index: 2;
-	background: url('/Images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+	text-align: center;
+}
+
+.fa-spin {
+	margin-top: 50%;
+	font-size: 10em;
+	color: #585c82;
 }
 
 .navbar {
@@ -39,6 +51,7 @@ a, p, h1, h2, h4, .location {
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin-bottom: 0px;
 	background-attachment: fixed;   /*Keeps the image stationary so that the other stuff scrolls over it*/
 }
 

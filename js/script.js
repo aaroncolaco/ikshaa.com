@@ -41,9 +41,9 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "post",
-			url: "http://www.aarongoa.tk/php/mail.php",
+			url: "/php/mail.php",
 			data: dataString,
-			success: function() {
+			complete: function() {
 				$('.form').hide()
 				$('#changingText').text("Thank you " + name +  "! We will be in touch with you shortly")
 			},
