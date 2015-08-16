@@ -42,7 +42,7 @@ $(document).ready(function() {
 			url: "/static/php/mail.php",
 			data: dataString,
 			complete: function() {
-				$('.form').hide();
+				$('#form').hide();
 				$('#changingText').text("Thank you " + name +  "! We will be in touch with you shortly");
 			},
 			error: function(xhr, textStatus, error){
