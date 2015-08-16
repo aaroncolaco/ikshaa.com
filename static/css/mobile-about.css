@@ -1,0 +1,49 @@
+@font-face {
+	font-family:"Samarkan";		/*Hindi type font*/
+	src:url("/static/fonts/samarkan.woff") format("woff");
+}
+
+html {
+	height: 100%;	/*So that the 100% divs are full height*/
+}
+
+body { 
+	height: 100%;	/*So that the 100% divs are full height*/
+	padding-top: 40px;
+}
+
+a, p, h1, h2, h4, .location { 
+	font-family: Verdana;
+}
+
+.navbar {
+	width: 100%;
+	z-index: 1;
+
+	background-color: #ffffff;
+}
+
+.about { 
+	background-image: url("/static/Images/IkshaaMachilla.jpg");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.about .container {
+	position: relative;
+	top: 15px;
+}
+
+.about h1 {
+	color: #fff;
+	font-size: 2em; 
+}
+
+/*Can hide the second para on mobiles by adding an ID to it and setting its text size to 0px in this file if this is too small to read.
+Then can increase this size to 20px.*/
+.about p {
+	color: #f7f7f7;
+	font-size: 1.1em;
+}

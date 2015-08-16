@@ -1,0 +1,47 @@
+@font-face {
+	font-family:"Samarkan";		/*Hindi type font*/
+	src:url("/static/fonts/samarkan.woff") format("woff");
+}
+
+html {
+	height: 100%;	/*So that the 100% divs are full height*/
+}
+
+body { 
+	height: 100%;	/*So that the 100% divs are full height*/
+	padding-top: 40px;
+}
+
+a, p, h1, h2, h4, .location { 
+	font-family: Verdana;
+}
+
+.navbar {
+	width: 100%;
+	z-index: 1;
+
+	background-color: #ffffff;
+}
+
+.contact {
+	background-image: url("/static/Images/IkshaaWindow.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 80em;
+	background-size: cover;
+}
+
+.contact .container {
+	position: relative;
+	top: 50px;
+	opacity: 0.7;
+}
+
+.contact .container h1 {
+	color: #fff;
+}
+
+.contact .form-inline {
+	margin: 0 auto;
+	width:90%
+}
