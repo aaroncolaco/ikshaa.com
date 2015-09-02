@@ -47,3 +47,7 @@ a, p, h1, h2, h4, .location {
 	font-size: 1.5em;
 	color: #ffd700;
 }
+
+.jumbotron .line-two, .line-three {
+	margin-top: -7%
+}
