@@ -9,7 +9,7 @@ html {
 
 body { 
 	height: 100%;	/*So that the 100% divs are full height*/
-	padding-top: 40px;
+	padding-top: 3%;
 }
 
 a, p, h1, h2, h4, .location{ 
@@ -37,7 +37,7 @@ a, p, h1, h2, h4, .location{
 
 .contact .container {
 	position: relative;
-	top: 50px;
+	top: 8%;
 	opacity: 0.9;
 }
 
