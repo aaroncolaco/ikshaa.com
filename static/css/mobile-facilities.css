@@ -18,6 +18,12 @@ a, p, h1, h2, h4, .location {
 	background-color: #ffffff;
 }
 
+.navbar .facebook-buttons {
+	display: inline-block;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
 .facilities {
 	background-image: url("/static/Images/CourtyardNight.jpg");
 	height: 50em;

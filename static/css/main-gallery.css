@@ -22,6 +22,11 @@ a, p, h1, h2, h4, .location{
 	text-align: center;
 }
 
+.navbar .facebook-buttons {
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
 .info-images {
 	background-color: #f7f7f7;
 	padding-top: 3em;

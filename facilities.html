@@ -51,6 +51,15 @@
 				<li><a href="/gallery.html">Gallery</a></li>
 				<li><a href="/contact.html">Contact Us</a></li>
 			  </ul>
+
+			  <ul class="nav navbar-nav navbar-right">
+					<li class="">
+						<div class="fb-like facebook-buttons" data-href="https://www.facebook.com/ikshaa.goa" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+					</li>
+					<li>
+						<div class="fb-share-button facebook-buttons" data-href="http://www.facebook.com/ikshaa.goa" data-layout="button"></div>
+					</li>
+				</ul>
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
@@ -86,6 +95,17 @@
 				$("#footer").load("footer.html"); 
 			});
 		</script>
+
+		<!-- FB JS SDK -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
 		<script async type="text/javascript" src="/static/js/bootstrap.min.js"></script>
 		</script>
 

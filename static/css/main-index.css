@@ -27,6 +27,11 @@ a, p, h1, h2, h4, .location{
 	text-align: center;
 }
 
+.navbar .facebook-buttons {
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
 .jumbotron {
 	background-image:url('/static/Images/courtyard2.jpg');
 	height: 100%;	/*So that jumbotron is full height even on large screens*/
