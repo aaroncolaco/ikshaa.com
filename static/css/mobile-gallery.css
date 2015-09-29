@@ -1,8 +1,3 @@
-@font-face {
-	font-family:"Samarkan";		/*Hindi type font*/
-	src:url("/static/fonts/samarkan.woff") format("woff");
-}
-
 html {
 	height: 100%;	/*So that the 100% divs are full height*/
 }
