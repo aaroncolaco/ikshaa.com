@@ -9,7 +9,7 @@
 
 	// set here
 	$subject = "Enquiry from website";
-	$to = ""; /* add email address here*/
+	$to = "nyaragoa@gmail.com"; /* add email address here*/
 
 	$headers = "From: $email\r\n";
 	$headers .= "Content-type: text/plain\r\n";		/* needs to be text/plain and NOT text/html so that the newline characters work. 
@@ -19,5 +19,5 @@
 		mail($to, $subject, $message, $headers);
 	
 		#redirect
-		header( "Location: http://ikshaa.com/#contact" );	//this line is important. remember to change domain if you use the script on a new domain. otherwise it won't return and carry out remaining operations after sending the email
+		header( "Location: http://ikshaa.com/contact.html" );	//this line is important. remember to change domain if you use the script on a new domain. otherwise it won't return and carry out remaining operations after sending the email
 ?>
