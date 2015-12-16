@@ -1,0 +1,62 @@
+html {
+	height: 100%;	/*So that the 100% divs are full height*/
+}
+
+body { 
+	min-height: 100%;	/*So that the 100% divs are full height*/
+	padding-top: 3%;
+}
+
+a, p, h1, h2, h4, .location{ 
+	font-family: Verdana;
+}
+
+.navbar {
+	width: 100%;
+	z-index: 1;
+
+	background-color: #ffffff;
+}
+
+.navbar > .navbar-collapse {
+	text-align: center;
+}
+
+.navbar .facebook-buttons {
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+.testimonials {
+	background-image: url("/static/Images/IkshaaPool.jpg");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.testimonials .container {
+	position: relative;
+	padding-top: 5%;
+}
+
+.testimonials .container h3 {
+	color: #ffffff;
+	font-size: 2.5em;
+	margin-bottom: 3%;
+}
+
+.testimonials .container p {
+	color: #ffffff;
+	font-size: 1.2em;  
+}
+
+.testimonials .container h4 {
+	color: #ffffff;
+	font-size: 1.5em;  
+}
+
+.testimonials .container li {
+	color: #ffffff;
+	margin-bottom: 5%;
+}
