@@ -2,13 +2,22 @@
 	
 	ini_set('display_errors',1);
 
+	if(empty($_POST['Name'])  		||
+		empty($_POST['Email']) 		||
+		empty($_POST['MessageToSend'])	||
+		!filter_var($_POST['Email'],FILTER_VALIDATE_EMAIL))
+			{
+				echo "Incorrect arguments Provided!";
+				return false;
+			}
+
 	// from the form
 	$name = $_POST["Name"];
 	$email = $_POST["Email"];
 	$message = $_POST["MessageToSend"];
 
 	// set here
-	$subject = "Enquiry from website";
+	$subject = "Enquiry from Ikshaa website";
 	$to = "nyaragoa@gmail.com"; /* add email address here*/
 
 	$headers = "From: $email\r\n";
