@@ -17,16 +17,17 @@
 	$message = $_POST["MessageToSend"];
 
 	// set here
-	$subject = "Enquiry from Ikshaa website";
-	$to = "nyaragoa@gmail.com"; /* add email address here*/
+	$subject = "Enquiry from Ikshaa website: $name";
+	$to = "foo@gmail.com"; /* add email address here*/
 
-	$headers = "From: $email\r\n";
-	$headers .= "Content-type: text/plain\r\n";		/* needs to be text/plain and NOT text/html so that the newline characters work. 
-															Otherwise received email is in one line */
-
-		// send the email
-		mail($to, $subject, $message, $headers);
+	$headers = "From: noreply@ikshaa.com\r\n";
+	$headers .= "Content-type: text/plain\r\n";		/* needs to be text/plain and NOT text/html so that the newline characters work. Otherwise received email is in one line */
 	
-		#redirect
-		header( "Location: http://ikshaa.com/contact.html" );	//this line is important. remember to change domain if you use the script on a new domain. otherwise it won't return and carry out remaining operations after sending the email
+	$headers .= "Reply-To: $email";
+
+	// send the email
+	mail($to, $subject, $message, $headers);
+	
+	#redirect
+	header( "Location: http://ikshaa.com/contact.html" );	//this line is important. remember to change domain if you use the script on a new domain. otherwise it won't return and carry out remaining operations after sending the email
 ?>
